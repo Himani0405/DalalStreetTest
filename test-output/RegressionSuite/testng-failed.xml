@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RegressionSuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="ai.ds.utility.ListenerSetup"/>
+  </listeners>
+  <test thread-count="5" name="Test1(failed)">
+    <classes>
+      <class name="ai.ds.testLayer.BuyFuntionality">
+        <methods>
+          <include name="verifyBuyFuntionalityWithIntraday"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="tearDown"/>
+          <include name="verifyBuyFuntionality"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- ai.ds.testLayer.BuyFuntionality -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [RegressionSuite] -->
